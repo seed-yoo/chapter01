@@ -23,8 +23,6 @@ public class Ex07 {
 			System.out.println("0입니다");
 		}
 		
-		
-		
 		sc.close();
 	}
 

@@ -13,7 +13,7 @@ public class Ex04 {
 		int m = 10000;
 		int m2 = 12000;
 		int result = t * m;
-		int result2 = 80000 + ((t-8)*m2);
+		int result2 = 8*m + ((t-8)*m2);
 		
 		if (t <= 8 && t > 0) {
 			System.out.println("임금은 " + result +"원 입니다." );

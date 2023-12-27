@@ -7,24 +7,18 @@ public class Ex05 {
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
-		System.out.print("근무시간: ");
-		int t = sc.nextInt();
+		System.out.println("점수를 입력하세요.");
+		int s = sc.nextInt();
 		
-		int m = 10000;
-		int r = t*m;
-		int r2 = 80000 + (t-8)*(m*3/2);
-		
-		if (t<=8 && t>0) {
-			System.out.println("임금은 " + r + "원 입니다.");
-		} else if(t>8) {
-			System.out.println("임금은 " + r2 + "원 입니다.");
-		} else {
-			System.out.println("정수입력이 아닙니다.");
+		if(s%3 == 0) {
+			System.out.println(s + "은(는) 3의 배수입니다.");
+		}else {
+			System.out.println(s + "은(는) 3의 배수가 아닙니다.");
 		}
 		
 		
-		
 		sc.close();
+		
 	}
 
 }

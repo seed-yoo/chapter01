@@ -7,24 +7,25 @@ public class Ex07 {
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
+		System.out.println("숫자를 입력하세요");
+		System.out.print("숫자: ");
+		int num = sc.nextInt();
 		
-		System.out.println("점수를 입력하세요 :");
-		int s = sc.nextInt();
-		if(90 <= s) {
-			System.out.println("A등급");
-		}else if (80<= s && 90>s) {
-			System.out.println("B등급");
-		}else if ( 70<= s && 80>s) {
-			System.out.println("C등급");
-		}else if ( 60<=s && 70>s) {
-			System.out.println("D등급");
+		if (num>0) {
+			if(num%2 == 0) {
+				System.out.println("짝수입니다.");
+			}else {
+				System.out.println("홀수입니다.");
+			}
+		}else if (num<0) {
+			System.out.println("음수입니다.");
 		}else {
-			System.out.println("F등급");
+			System.out.println("0입니다");
 		}
 		
 		
-		sc.close();
 		
+		sc.close();
 	}
 
 }
